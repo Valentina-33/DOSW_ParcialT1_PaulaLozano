@@ -24,3 +24,25 @@ En este diagrama identificamos los principales actores que interactúan con el s
 
 También podríamos usar patrones como observer para el tema de notificaciones y y Factory en complemento de Strategy para manejar los tipos de eventos.
 
+## 3. Requerimientos.
+
+### Requerimientos funcionales
+1. Los usuarios deben poder hacer la creación de eventos que deseen, siempre y cuando tengan los permisos necesarios para poder realizarlo.
+2. Los usuarios deben poder realizar la inscripción de los asistentes en cada uno de los eventos que creen.
+3. Se debe notificar cambios relevantes del evento a los inscritos en este mismo. Estos cambios incluyen: <br>
+● El evento cambia de estado a CONFIRMADO <br>
+● El evento es CANCELADO <br>
+● Se modifica la fecha/hora de inicio <br>
+● Se alcanza el cupo máximo
+
+
+
+### Requerimientos no funcionales
+No vi explícitamente requerimientos no funcionales definidos en el texto, pero en general podría agregar estos:
+
+1. La paleta de colores de la página acorde a la Universidad.  
+2. Que sea responsivo para que desde diferentes dispositivos se pueda acceder sin inconvenientes.
+
+
+*Nota:* El requerimiento funcional que utiliza uno de los patrones dichos es el requerimiento 1, es aquí donde desginamos que los usuarios tengan los permisos necesarios para poder realizar cierta acción. Con el pátrón Strategy manejamos la dinámica que tiene cada usuario.
+

@@ -63,3 +63,52 @@ Como usuario que ha creado un evento teniendo los permisos, quiero poder agregar
 *Nota:* El requerimiento 1 es que utiliza el patrón Strategy previamente definido.
 
 
+# 6. Descomposición de tareas
+
+## Desglose de trabajo: Épicas, Historias de Usuario y Tareas
+
+### 1. Épica:
+
+| Campo | Descripción |
+|------|-------------|
+| **ID** | EP-01 |
+| **Título** | Creación de evento |
+| **Descripción** | *Es el objetivo del sistema* |
+| **Stakeholder** | *Los usuarios que crean los eventos y quienes participan en ellos* |
+
+### 2. Historias de usuario:
+
+| Campo | Descripción |
+|------|-------------|
+| **ID** | HU-01 |
+| **Título** | Solicitud de creación de evento por parte del usuario|
+| **Descripción** | *Como usuario con posibilidad de crear eventos, quiero crear cierto tipo de evento según mis permisos para poder realizar las actividades que tengo propuestas.* |
+| **Prioridad** | *[Alta] Debido a que es una función objetivo del sistema* |
+
+### 3. Tareas:
+
+| Campo | Descripción |
+|------|-------------|
+| **ID** | TR-01 |
+| **Título** | Definir los roles de los usuarios|
+| **ID de la Historia de Uso asociada** | HU-01 |
+| **Descripción** | *Se debe definir los roles de los usuarios* |
+| **Tareas requisito** | *Ninguna* |
+
+
+| Campo | Descripción |
+|------|-------------|
+| **ID** | TR-02 |
+| **Título** | Definir los permisos de cada usuario|
+| **ID de la Historia de Uso asociada** | HU-01 |
+| **Descripción** | *Cada usuario tiene ciertos permisos asignados* |
+| **Tareas requisito** | *TR-01* |
+
+| Campo | Descripción |
+|------|-------------|
+| **ID** | TR-02 |
+| **Título** | Crear un evento|
+| **ID de la Historia de Uso asociada** | HU-01 |
+| **Descripción** | *Crear un evento que el usuario pida una vez validados sus permisos* |
+| **Tareas requisito** | *TR-02* |
+

@@ -24,6 +24,7 @@ En este diagrama identificamos los principales actores que interactúan con el s
 
 También podríamos usar patrones como observer para el tema de notificaciones y y Factory en complemento de Strategy para manejar los tipos de eventos.
 
+
 ## 3. Requerimientos.
 
 ### Requerimientos funcionales
@@ -34,7 +35,6 @@ También podríamos usar patrones como observer para el tema de notificaciones y
 ● El evento es CANCELADO <br>
 ● Se modifica la fecha/hora de inicio <br>
 ● Se alcanza el cupo máximo
-
 
 
 ### Requerimientos no funcionales

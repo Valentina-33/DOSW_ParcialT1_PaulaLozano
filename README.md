@@ -7,6 +7,8 @@ En este diagrama identificamos los principales actores que interactúan con el s
 
 ## 2.Identificando patrones.
 
+Cuando habías dicho lo de los patrones ya había escrito estos. Siguen cumpliendo la lógica y explico por qué los elegí, los había pensado más que todo por la implementación.
+
 ### Primer patrón
 **Nombre:**  Strategy 
 
@@ -112,3 +114,5 @@ Como usuario que ha creado un evento teniendo los permisos, quiero poder agregar
 | **Descripción** | *Crear un evento que el usuario pida una vez validados sus permisos* |
 | **Tareas requisito** | *TR-02* |
 
+
+![Diagrama de Contexto](DOSW-ParcialT1/docs/images/Diagrama.png)

@@ -42,3 +42,7 @@ El sistema de EventSync debe tener la capacidad de:
 | **Poscondiciones** | *Se espera como resultado el evento se crea con los participantes* |
 
 
+
+
+
+

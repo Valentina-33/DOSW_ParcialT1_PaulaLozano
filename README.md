@@ -7,22 +7,23 @@ En este diagrama identificamos los principales actores que interactúan con el s
 
 ## 2.Identificando patrones.
 
+
+Había pensado usar Strategy y Adapter para la creación, pero de acuerdo a lo dicho lo cambié y se sigue acoplando a lo que había pensado. 
+
 ### Primer patrón
-**Nombre:**  Strategy 
+**Nombre:**  Observer 
 
 **Tipo:** Patrón de comportamiento
 
-**Justificación:** En el texto vemos que no todos los usuarios pueden crear cualquier evento, algunos pueden crear ciertos tipos que otros no pueden. Strategy nos permite que el usuario pueda realizar únicamente sus operaciones previamente definidas y permitidas, aliviando la complejidad de usar if-else.
+**Justificación:** Necesitamos enviar notificaciones a los usuarios según lo menciona el texto.
 
 
 ### Segundo patrón
-**Nombre:** Adapater
+**Nombre:** Factory
 
-**Tipo:** Patrón estructural
+**Tipo:** Patrón creacional
 
-**Justificación:** Los usuarios externos que son los sistemas que entregan datos a EventSync. EventSync recibe estos datos por parte del Sistema académico y RRHH con ciertos formatos como lo son: codigo,nombre,correo y dEnlace_nombre_correo_programa, pero únicamente acepta los que terminen en  @escuelaing.edu.co y  @mail.escuelaing.edu.co, respectivamente.
-
-También podríamos usar patrones como observer para el tema de notificaciones y y Factory en complemento de Strategy para manejar los tipos de eventos.
+**Justificación:** Lo necesitamos para crear los diferentes tipos de eventos que pueden crear los usuarios.
 
 ## 3. Requerimientos.
 
@@ -43,7 +44,7 @@ No vi explícitamente requerimientos no funcionales definidos en el texto, pero 
 2. Que sea responsivo para que desde diferentes dispositivos se pueda acceder sin inconvenientes.
 
 
-*Nota:* El requerimiento funcional que utiliza uno de los patrones dichos es el requerimiento 1, es aquí donde desginamos que los usuarios tengan los permisos necesarios para poder realizar cierta acción. Con el pátrón Strategy manejamos la dinámica que tiene cada usuario.
+*Nota:* El requerimiento funcional que utiliza uno de los patrones dichos es el requerimiento 1, es aquí donde desginamos que los usuarios tengan los permisos necesarios para poder realizar cierta acción.
 
 
 ## 4. Diagramas de caso de uso
@@ -60,7 +61,7 @@ Como usuario con posibilidad de crear eventos, quiero crear cierto tipo de event
 ## Hisotria de usuario 2
 Como usuario que ha creado un evento teniendo los permisos, quiero poder agregar a los asistentes para llevar registro de la participación de ellos en las actividades propuestas.
 
-*Nota:* El requerimiento 1 es que utiliza el patrón Strategy previamente definido.
+*Nota:* El requerimiento 1 es que utiliza el patrón Facade
 
 
 # 6. Descomposición de tareas
